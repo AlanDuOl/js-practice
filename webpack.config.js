@@ -6,7 +6,7 @@ module.exports = {
 	entry: './js/app.js',
 	devServer: {
         contentBase: "dist",
-        port: 9000
+        port: 3000
     },
 	plugins: [
 		new HtmlWebpackPlugin(),
@@ -23,7 +23,7 @@ module.exports = {
 				}
 			},
 			{
-				test: /\.scss$/,
+				test: /\.s?css$/,
 				use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
 			}
 		]

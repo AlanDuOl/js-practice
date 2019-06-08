@@ -1,12 +1,17 @@
+@import 'globals';
 
 * {
     box-sizing: border-box;
 }
 
-body {
-	background-color: gray;
+#container {
+	// background-color: gray;
 }
 
-span {
-	color: red;
+#div-1 {
+	background-color: $primary;
+}
+
+#div-2 {
+	background-color: $secondary;
 }
