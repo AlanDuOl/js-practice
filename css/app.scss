@@ -1,4 +1,6 @@
 @import 'globals';
+@import 'mixins';
+@import 'extendables';
 
 * {
     box-sizing: border-box;
@@ -9,9 +11,29 @@
 }
 
 #div-1 {
-	background-color: $primary;
+	@include highlight-div($primary);
 }
 
 #div-2 {
-	background-color: $secondary;
+	@include highlight-div($secondary);
+}
+
+#btn-1 {
+	@extend .button-basic;
+	background-color: blue;
+}
+
+#btn-2 {
+	@extend .button-basic;
+	background-color: green;
+}
+
+#btn-3 {
+	@extend .button-basic;
+	background-color: blue;
+}
+
+#btn-4 {
+	@extend .button-basic;
+	background-color: red;
 }

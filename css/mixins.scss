@@ -1,0 +1,6 @@
+@mixin highlight-div($color: gray, $width: 1px, $texture: solid, $radius: 3px) {
+    border: $color $texture $color;
+    border-radius: $radius;
+    background-color: $color;
+    margin: 4px 8px;
+}
